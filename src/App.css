@@ -7,12 +7,18 @@
   justify-content: center;
   align-items: center;
 } */
+body{
+  background-color: #BC4540;
+
+}
 #appbar{
   background-color: #953834;
-  height: 70px;
+  height: 100px;
 }
+#appbar img {
+  width: 100px;
+  }
 .main {
-  background-color: #BC4540;
   height: 500px;
   width:100%;
 }
@@ -40,11 +46,10 @@
   display: list-item;
   margin: 3px;
 }
-.footer {
-  background-color: #CC6863;
-  height: 46px;
-  text-align: center;
-}
 #InputClient{
   width: 10px;
+}
+.menus{
+  display: inline-block;
+  padding-left: 100px;
 }
