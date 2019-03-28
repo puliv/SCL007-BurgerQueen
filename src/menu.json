@@ -1,0 +1,78 @@
+{
+    "desayuno": {
+        "1": {
+            "menu": "Café americano",
+            "precio": 500
+        },
+        "2": {
+            "menu": "Café con leche",
+            "precio": 700
+        },
+        "3": {
+            "menu": "Sandwich de jamón y queso",
+            "precio": 1000
+        },
+        "4": {
+            "menu": "Jugo Natural",
+            "precio": 700
+        }
+    },
+    "menuRestoDelDia": {
+        "5": {
+            "menu":"Hamburguesa Simple Res",
+            "precio": 1500
+        },
+        "6": {
+            "menu":"Hamburguesa Simple Pollo",
+            "precio": 1500
+        },
+        "7": {
+            "menu": "Hamburguesa Simple vegetariana",
+            "precio": 1500
+        },
+        "8": {
+            "menu": "Hamburguesa Doble Res",
+            "precio": 2500
+        },
+        "9": {
+            "menu":"Hamburguesa Doble Pollo",
+            "precio": 2500
+        },
+        "10": {
+            "menu": "Hamburguesa Doble vegetariana",
+            "precio": 2500
+        },
+        "11": {
+            "menu":"Agua 500mL",
+            "precio": 500
+        },
+        "12": {
+            "menu": "Agua 750mL",
+            "precio": 800
+        },
+        "13": {
+            "menu": "Bebida 500mL",
+            "precio": 700
+        },
+        "14": {
+            "menu": "Bebida 750mL",
+            "precio": 1000
+        },
+        "15": {
+            "menu": "Con huevo",
+            "precio": 500
+        },
+        "16": {
+            "menu": "Con queso",
+            "precio": 500
+        },
+        "17": {
+            "menu": "Papas fritas",
+            "precio": 500
+        },
+        "18": {
+            "menu":"Onion rings",
+            "precio": 500
+        }
+    }
+}
