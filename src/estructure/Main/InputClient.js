@@ -27,7 +27,7 @@ class InputClient extends Component {
             <section className="inputClient">
                 <input type="text" placeholder="Ingresa tu nombre" onChange={this.temporalName} value={this.state.tempClientName}/>
                 <button onClick={this.onChangeName}>Enviar</button>
-                <h1>Hola Sr/Sra ¡{this.state.clientName}!</h1>
+                <h1 className="clientName">Cliente: {this.state.clientName}</h1>
             </section>
         );
     }

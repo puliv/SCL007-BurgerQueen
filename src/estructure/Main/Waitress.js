@@ -13,11 +13,11 @@ class Waitress extends Component {
                 <br/>
                     <InputClient />
                 </div>
-                <div className="container row col s6 menus">
-                    <BreakfastBtn />
+                <div className="container row col-s6">
+                    <BreakfastBtn onClick={this.props.onClick}/>
                 </div>
-                <div className="container row col s6 menus">
-                    <LaunchBtn />
+                <div className="container row col-s6">
+                    <LaunchBtn onClick={this.props.onClick}/>
                 </div>
             </section>
         );

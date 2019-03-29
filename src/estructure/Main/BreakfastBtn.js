@@ -1,25 +1,30 @@
 import React, { Component } from "react"
 import "../../App.css"
-import desayuno from "../../desayuno.json"
+import breakfast from "../../breakfast.json"
 
 class BreakfastBtn extends Component {
     constructor() {
         super();
         this.state = {
-            desayuno
+            breakfast
         }
     }
     render() {
-        const menu = this.state.desayuno.map((item) => {
+        const menu = this.state.breakfast.map((item) => {
             return (
-                <div key={item.key}>
-                    <button>{item.menu}</button>
-                    <button>{item.precio}</button>
+                <div>
+                    <table>
+                        <tr>
+                            <td onClick={() => this.props.onClick(item)}>{item.menu}</td>
+                            <td className="tdDos" onClick={() => this.props.onClick(item)}>${item.precio}</td>
+                        </tr>
+                    </table>
                 </div>
             )
         })
         return (
             <div>
+                <h4>Desayuno</h4>
                 {menu}
             </div>
         )

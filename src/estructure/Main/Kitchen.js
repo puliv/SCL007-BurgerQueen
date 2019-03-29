@@ -1,11 +1,19 @@
 import React from "react"
 import "../../App.css"
-// import ShopList from "./ShopList";
 
-function Kitchen() {
-    return(
-        <section className= "kitchen">
-            {/* <ShopList/> */}
+function Kitchen(props) {
+    let pedidos = "";
+    if (props.btnOrderBreakfast) {
+        pedidos = props.btnOrderBreakfast.forEach((item) => {
+            return (
+                <p>{item.menu} {item.precio}</p>
+            )
+        })
+    }
+
+    return (
+        <section className="kitchen">
+            {pedidos}
         </section>
     )
 }

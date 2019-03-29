@@ -1,14 +1,13 @@
 import React from "react"
 import Waitress from "./Waitress"
-import Kitchen from "./Kitchen"
 import "../../App.css"
 
 
-function Main() {
+function Main(props) {
     return (
         <main className="main" >
-            <Waitress />
-            <Kitchen />
+            <Waitress onClick={props.onClick}/>
+            {/* <Kitchen onClick={props.onClick}/> */}
         </main>
     )
 }
