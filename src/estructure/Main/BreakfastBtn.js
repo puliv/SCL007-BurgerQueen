@@ -15,7 +15,7 @@ class BreakfastBtn extends Component {
                 <div>
                     <table>
                         <tr>
-                            <td onClick={() => this.props.onClick(item)}>{item.menu}</td>
+                            <td><button onClick={() => this.props.onClick(item)}>{item.menu}</button></td>
                             <td className="tdDos" onClick={() => this.props.onClick(item)}>${item.precio}</td>
                         </tr>
                     </table>

@@ -13,7 +13,7 @@ function Kitchen(props) {
 
     return (
         <section className="kitchen">
-            {pedidos}
+            <p>{pedidos}</p>
         </section>
     )
 }

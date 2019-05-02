@@ -16,11 +16,14 @@ body{
   padding-top: 0;
   margin-top: 0px;
 }
-.button{
-  padding: 15px 32px;
-  text-align: center;
+button{
+  /* padding: 15px 32px; */
   display: list-item;
-  margin: 3px;
+  border-color: #F9E79F;
+  background-color: #BC4540;
+  color: #F9E79F;
+  padding: 5px;
+  border-radius: 10px;
 }
 #InputClient{
   width: 10px;

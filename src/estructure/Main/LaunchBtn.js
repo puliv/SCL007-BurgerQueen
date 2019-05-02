@@ -12,10 +12,10 @@ class LaunchBtn extends Component {
     render() {
         const menu = this.state.launch.map((item) => {
             return (
-                <div>
+                <div className="lnch" key={ item.id }>
                     <table>
                         <tr>
-                            <td className="tdUno" onClick={() => this.props.onClick(item)}>{item.menu}</td>
+                            <td><button className="tdUno" onClick={() => this.props.onClick(item)}>{item.menu}</button></td>
                             <td className="tdDos" onClick={() => this.props.onClick(item)}>${item.precio}</td>
                         </tr>
                     </table>
