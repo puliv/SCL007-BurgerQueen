@@ -1,11 +1,12 @@
-import React, { Component } from "react"
-import "../../App.css"
+import React, { Component } from "react";
+import { connect } from 'react-redux'
+import "../../App.css";
+import { addName } from "../../actions/burgerActions";
 
 class InputClient extends Component {
     constructor() {
         super()
         this.state = {
-            clientName: "",
             tempClientName: ""
         }
         this.temporalName = this.temporalName.bind(this);
@@ -17,19 +18,39 @@ class InputClient extends Component {
         })
     }
     onChangeName() {
-        this.setState({
-            clientName: this.state.tempClientName,
-            tempClientName:""
-        })
+        this.props.putNameInState(this.state.tempClientName);
     }
     render() {
         return (
             <section className="inputClient">
-                <input type="text" placeholder="Ingresa tu nombre" onChange={this.temporalName} value={this.state.tempClientName}/>
-                <button onClick={this.onChangeName}>Enviar</button>
-                <h1 className="clientName">Cliente: {this.state.clientName}</h1>
+                <input
+                    type="text"
+                    placeholder="Ingresa tu nombre"
+                    onChange={this.temporalName}
+                    value={this.state.tempClientName}
+                />
+                <button
+                    onClick={this.onChangeName}>Enviar
+                </button>
+                <h1
+                    className="clientName">
+                    Cliente: {this.props.burgerReducer.clientName}
+                </h1>
             </section>
         );
     }
 }
-export default InputClient
+
+const mapStateToProps = (state) => {
+    return {
+        ...state
+    };
+};
+
+const mapActionsToProps = (dispatch) => {
+    return {
+        putNameInState: addName(dispatch)
+    }
+};
+
+export default connect(mapStateToProps, mapActionsToProps)(InputClient)
