@@ -14,10 +14,11 @@ class BreakfastBtn extends Component {
             return (
                 <div>
                     <table>
+                        <tbody>
                         <tr>
-                            <td><button onClick={() => this.props.onClick(item)}>{item.menu}</button></td>
-                            <td className="tdDos" onClick={() => this.props.onClick(item)}>${item.precio}</td>
-                        </tr>
+                                <td><button /*onClick={() => this.props.onClick(item)*/>{item.menu}</button></td>
+                                <td className="tdDos" /*onClick={() => this.props.onClick(item)}*/>${item.precio}</td>
+                            </tr>
                     </table>
                 </div>
             )
