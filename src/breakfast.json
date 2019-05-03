@@ -2,21 +2,21 @@
     {
         "id": 1,
         "menu": "Café americano",
-        "precio": 500
+        "price": 500
     },
     {
         "id": 2,
         "menu": "Café con leche",
-        "precio": 700
+        "price": 700
     },
     {
         "id": 3,
         "menu": "Sandwich de jamón y queso",
-        "precio": 1000
+        "price": 1000
     },
     {
         "id": 4,
         "menu": "Jugo Natural",
-        "precio": 700
+        "price": 700
     }
 ]

@@ -1,21 +1,22 @@
-import React from "react"
+import React, { Component } from "react"
 import "../../App.css"
 
-function Kitchen(props) {
-    let pedidos = "";
-    if (props.btnOrderBreakfast) {
-        pedidos = props.btnOrderBreakfast.forEach((item) => {
-            return (
-                <p>{item.menu} {item.precio}</p>
-            )
-        })
+class Kitchen extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            savedOrder: ''
+        }
     }
 
-    return (
-        <section className="kitchen">
-            <p>{pedidos}</p>
-        </section>
-    )
+
+    render() {
+        return (
+            <section className="kitchen">
+                
+            </section>
+        )
+    }
 }
 
 export default Kitchen

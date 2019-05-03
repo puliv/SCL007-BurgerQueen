@@ -47,3 +47,6 @@ table {
 .tdDos{
   text-align: right;  
 }
+#main {
+  display: inline-block;
+}

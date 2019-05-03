@@ -2,20 +2,23 @@ import React, { Component } from "react"
 import Waitress from "./Waitress"
 import "../../App.css"
 import Kitchen from "./Kitchen";
+import CashRegister from "./CashRegister";
 
 
 class Main extends Component {
-    // constructor(){
-    //     super()
+    // constructor(props) {
+    //     super(props)
     // }
+
     render() {
-        // const orderArr = this.state.orderArr;
-        // console.log(orderArr);
         return (
             <main className="container">
                 <div className="row">
-                    <div className="col s8">
-                        <Waitress onClick={this.props.onClick} />
+                    <div className="col s6 main">
+                        <Waitress />
+                    </div>
+                    <div className="col s6 main">
+                        <CashRegister />
                     </div>
                     <div>
                         <Kitchen />

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux'
 import "../../App.css";
-import { addName } from "../../actions/burgerActions";
+import { addName } from "../../redux/actions/burgerActions";
 
 class InputClient extends Component {
     constructor() {
@@ -9,15 +9,15 @@ class InputClient extends Component {
         this.state = {
             tempClientName: ""
         }
-        this.temporalName = this.temporalName.bind(this);
-        this.onChangeName = this.onChangeName.bind(this);
+        // this.temporalName = this.temporalName.bind(this);
+        // this.onChangeName = this.onChangeName.bind(this);
     }
-    temporalName(e) {
+    temporalName = (e) => {
         this.setState({
             tempClientName: e.target.value
         })
     }
-    onChangeName() {
+    onChangeName = () => {
         this.props.putNameInState(this.state.tempClientName);
     }
     render() {

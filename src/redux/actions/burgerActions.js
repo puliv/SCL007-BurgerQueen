@@ -10,3 +10,10 @@ export const addName = dispatch => clientName => {
         payload: clientName
     })
 }
+
+export const selectedMenu = dispatch => clientSelection => {
+    dispatch({
+        type: actions.SELECTED_MENU,
+        payload: clientSelection
+    })
+}
