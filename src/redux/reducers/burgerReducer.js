@@ -3,7 +3,7 @@ import * as actions from "../actions/actionTypes";
 export default function (
     state = {
         clientName: '',
-        clientSelection: ''
+        clientSelection: []
     }, action) {
     switch (action.type) {
         case actions.ADD_NAME:
@@ -14,11 +14,12 @@ export default function (
         case actions.SELECTED_MENU:
             return {
                 ...state,
-                clientSelection: action.payload.push(action.payload)
+                clientSelection: state.clientSelection.concat([action.payload])
             };
         case actions.DELETE_ITEM:
             return {
                 ...state,
+                clientSelection: state.clientSelection.slice(0, action.payload).concat(state.clientSelection.slice(action.payload + 1))
             }
         default:
             return {

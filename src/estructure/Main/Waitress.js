@@ -16,7 +16,7 @@ class Waitress extends Component {
     render() {
         return (
             <section className="waitress">
-                <div className="container">
+                <div className="container row col-s12">
                     <br />
                     <InputClient />
                 </div>

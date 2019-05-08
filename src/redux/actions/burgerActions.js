@@ -17,3 +17,10 @@ export const selectedMenu = dispatch => clientSelection => {
         payload: clientSelection
     })
 }
+
+export const deleteItem = dispatch => deleteIndex => {
+    dispatch({
+        type: actions.DELETE_ITEM,
+        payload: deleteIndex
+    })
+}
