@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import DeleteBtn from "./DeleteBtn";
+import Sum from "./Sum";
 // import { DeleteOutlined } from '@material-ui/icons/DeleteOutlined';
 
 
@@ -12,21 +13,21 @@ class CashRegister extends Component {
     render() {
         const clientOrder = this.props.burgerReducer.clientSelection.map((item, index) => {
             return (
-                <div key={item.id}>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>{item.menu}</td>
-                                <td className="tdDos">{item.price}</td>
-                                <DeleteBtn index={index} handleDelete={this.handleDelete} />
-                            </tr>
-                        </tbody>
-                    </table>
+                <div key={item.id} id="client_order">
+                    <p>{item.menu}</p>
+                    <p>{item.price}</p>
+                    <DeleteBtn index={index} handleDelete={this.handleDelete} />
                 </div>
             )
         })
         return (
-            clientOrder
+            <div>
+                {clientOrder}
+                <div>
+                    <h3>Total a pagar:<Sum /></h3>
+                </div>
+            </div>
+
         )
     }
 }
@@ -37,7 +38,7 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = () => {
     return {
-        
+
     }
 }
 

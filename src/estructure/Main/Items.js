@@ -3,7 +3,7 @@ import { connect } from "react-redux"
 // import burgerReducer from "../../redux/reducers/burgerReducer";
 import { selectedMenu } from "../../redux/actions/burgerActions";
 
-class ItemBreakfast extends Component {
+class Items extends Component {
     // constructor(props){
     //     super(props);
     // }
@@ -40,4 +40,4 @@ const mapActionsToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapActionsToProps)(ItemBreakfast)
+export default connect(mapStateToProps, mapActionsToProps)(Items)

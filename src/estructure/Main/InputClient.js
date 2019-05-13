@@ -25,7 +25,7 @@ class InputClient extends Component {
             <section className="inputClient">
                 <input
                     type="text"
-                    placeholder="Ingresa tu nombre"
+                    placeholder="Nombre del Cliente"
                     onChange={this.temporalName}
                     value={this.state.tempClientName}
                 />

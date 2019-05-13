@@ -24,3 +24,10 @@ export const deleteItem = dispatch => deleteIndex => {
         payload: deleteIndex
     })
 }
+
+// export const addPrice = dispatch => totalPrice => {
+//     dispatch ({
+//         type: actions.TOTAL_PRICE,
+//         payload: totalPrice
+//     })
+// }

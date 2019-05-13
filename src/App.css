@@ -12,12 +12,7 @@ body{
   height: 500px;
   width:100%;
 }
-.waitressTitle{
-  padding-top: 0;
-  margin-top: 0px;
-}
 button{
-  /* padding: 15px 32px; */
   display: list-item;
   border-color: #F9E79F;
   background-color: #BC4540;
@@ -48,5 +43,8 @@ table {
   text-align: right;  
 }
 #main {
+  display: inline-block;
+}
+#client_order {
   display: inline-block;
 }

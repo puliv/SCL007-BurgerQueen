@@ -20,9 +20,9 @@ class Main extends Component {
                     <div className="col s6 main">
                         <CashRegister />
                     </div>
-                    <div>
+                    {/* <div>
                         <Kitchen />
-                    </div>
+                    </div> */}
                 </div>
             </main>
         )

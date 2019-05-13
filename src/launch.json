@@ -2,76 +2,76 @@
     {
         "menu": "Hamburguesa Simple Res",
         "id": 1,
-        "precio": 1500
+        "price": 1500
     },
     {
         "menu": "Hamburguesa Simple Pollo",
         "id": 2,
-        "precio": 1500
+        "price": 1500
     },
     {
         "menu": "Hamburguesa Simple vegetariana",
         "id": 3,
-        "precio": 1500
+        "price": 1500
     },
     {
         "menu": "Hamburguesa Doble Res",
         "id": 4,
-        "precio": 2500
+        "price": 2500
     },
     {
         "menu": "Hamburguesa Doble Pollo",
         "id": 5,
-        "precio": 2500
+        "price": 2500
     },
     {
         "menu": "Hamburguesa Doble vegetariana",
         "id": 6,
-        "precio": 2500
+        "price": 2500
     },
     {
         "menu": "Agua 500mL",
         "id": 7,
-        "precio": 500
+        "price": 500
     },
     {
         "menu": "Agua 750mL",
         "id": 8,
-        "precio": 800
+        "price": 800
     },
     {
         "menu": "Bebida 500mL",
         "id": 9,
-        "precio": 700
+        "price": 700
     },
     {
 
         "menu": "Bebida 750mL",
         "id": 10,
-        "precio": 1000
+        "price": 1000
     },
     {
 
         "menu": "Con huevo",
         "id": 11,
-        "precio": 500
+        "price": 500
     },
     {
 
         "menu": "Con queso",
         "id": 12,
-        "precio": 500
+        "price": 500
     },
     {
 
         "menu": "Papas fritas",
         "id": 13,
-        "precio": 500
+        "price": 500
     },
     {
 
         "menu": "Onion rings",
         "id": 14,
-        "precio": 500
+        "price": 500
     }
 ]

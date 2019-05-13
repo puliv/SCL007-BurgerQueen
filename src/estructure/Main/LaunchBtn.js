@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "../../App.css"
 import launch from "../../launch.json"
+import Items from "./Items";
 
 class LaunchBtn extends Component {
     constructor() {
@@ -12,16 +13,7 @@ class LaunchBtn extends Component {
     render() {
         const menu = this.state.launch.map((item) => {
             return (
-                <div className="lnch" key={item.id}>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td><button className="tdUno" onClick={() => this.props.onClick(item)}>{item.menu}</button></td>
-                                <td className="tdDos" onClick={() => this.props.onClick(item)}>${item.precio}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <Items key={item.id} item={item}/>
             )
         })
         return (

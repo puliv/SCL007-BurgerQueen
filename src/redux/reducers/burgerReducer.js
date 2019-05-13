@@ -20,7 +20,7 @@ export default function (
             return {
                 ...state,
                 clientSelection: state.clientSelection.slice(0, action.payload).concat(state.clientSelection.slice(action.payload + 1))
-            }
+            };
         default:
             return {
                 ...state
