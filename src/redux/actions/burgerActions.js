@@ -19,6 +19,7 @@ export const selectedMenu = dispatch => clientSelection => {
 }
 
 export const deleteItem = dispatch => deleteIndex => {
+    console.log('deleteItem', deleteItem)
     dispatch({
         type: actions.DELETE_ITEM,
         payload: deleteIndex

@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import DeleteBtn from "./DeleteBtn";
 import Sum from "./Sum";
+import Button from '@material-ui/core/Button'
+import { deleteItem } from "../../redux/actions/burgerActions";
 
 
 class CashRegister extends Component {
@@ -22,30 +23,48 @@ class CashRegister extends Component {
         clientOrder: clientSelection.map((item, index) => {
           return (
             <div key={item.id} id="client_order">
-              <p>{item.menu}</p>
-              <p>{item.price}</p>
-              <DeleteBtn index={index} handleDelete={this.handleDelete} />
+              <span>{item.menu} {item.price}</span>
+              <button onClick={() => this.props.deleteItemFromOrder(index)} className="delete-item">X</button>
             </div>
           )
         })
       })
     }
-
   }
 
+  componentDidUpdate(prevProps) {
+    const { clientSelection } = this.props
+
+    if (prevProps.clientSelection !== clientSelection) {
+      this.setState({
+        clientOrder: clientSelection.map((item, index) => {
+          return (
+            <div key={item.id} className="client-order">
+              <span>{item.menu} {item.price}</span>
+              <button onClick={() => this.props.deleteItemFromOrder(index)} className="delete-item">X</button>
+            </div>
+          )
+        })
+      })
+    }
+  }
 
   render() {
     const { clientOrder } = this.state
 
-    console.log('clientOrder', clientOrder)
-
     return (
       <React.Fragment>
-        <div className="client-order">
-          {clientOrder}
-        </div>
+        {clientOrder}
         <div>
           <h3>Total a pagar:<Sum /></h3>
+
+          <Button
+            className="send-button"
+            variant="contained"
+            color="primary"
+            size="medium">
+            Enviar a cocina
+          </Button>
         </div>
       </React.Fragment>
     )
@@ -57,10 +76,10 @@ const mapStateToProps = (state) => {
     clientSelection: state.burgerReducer.clientSelection
   }
 }
-const mapDispatchToProps = () => {
+const mapDispatchToProps = (dispatch) => {
   return {
-
+    deleteItemFromOrder: deleteItem(dispatch)
   }
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(CashRegister)

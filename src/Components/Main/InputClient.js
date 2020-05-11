@@ -9,8 +9,6 @@ class InputClient extends Component {
         this.state = {
             tempClientName: ""
         }
-        // this.temporalName = this.temporalName.bind(this);
-        // this.onChangeName = this.onChangeName.bind(this);
     }
     temporalName = (e) => {
         this.setState({
