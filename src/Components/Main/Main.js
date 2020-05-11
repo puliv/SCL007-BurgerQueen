@@ -7,12 +7,14 @@ import CashRegister from "./CashRegister";
 class Main extends Component {
   render() {
     return (
-      <React.Fragment>
-          <div>
+      <div className="main" >
+          <div className="main-waitress">
             <Waitress />
+          </div>
+          <div className="main-cashregister">
             <CashRegister />
           </div>
-      </React.Fragment>
+      </div>
     )
   }
 }

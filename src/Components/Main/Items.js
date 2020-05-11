@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import { selectedMenu } from "../../redux/actions/burgerActions";
-
+import { selectedMenu } from "../../redux/actions/burgerActions"
+import Button from '@material-ui/core/Button'
 
 class Items extends Component {
 
@@ -12,8 +12,13 @@ class Items extends Component {
   render() {
     return (
       <div className="item" onClick={this.handleClick}>
-        <span>{this.props.item.menu}</span>
-        <span>${this.props.item.price}</span>
+        <Button
+          className="item-button"
+          variant="contained"
+          color="secondary"
+          size="small">
+          {this.props.item.menu}&nbsp;${this.props.item.price}
+        </Button>
       </div>
     )
   }

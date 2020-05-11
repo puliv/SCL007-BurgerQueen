@@ -7,9 +7,9 @@ function Header() {
 
   return (
     <header className="header">
-      <AppBar position="static" id="appbar" color="primary">
+      <AppBar position="static" id="appbar">
         <Toolbar variant="dense">
-          <Typography variant="h6" color="#f2f7f5">
+          <Typography variant="h6">
             <img src={logo} alt="BurgerQueen" id="logo" />
           </Typography>
           <InputClient />

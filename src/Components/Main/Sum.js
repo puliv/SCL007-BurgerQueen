@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 class Sum extends Component {
-
   render() {
     const orderValue = this.props.burgerReducer.clientSelection.reduce((accumulator, item) => {
       return (

@@ -32,6 +32,7 @@ class Waitress extends Component {
     })
   }
 
+
   render() {
   const { breakfastMenu, launchMenu } = this.state
 

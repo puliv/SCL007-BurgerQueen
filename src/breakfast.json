@@ -1,22 +1,22 @@
 [
-    {
-        "id": 1,
-        "menu": "Café americano",
-        "price": 500
-    },
-    {
-        "id": 2,
-        "menu": "Café con leche",
-        "price": 700
-    },
-    {
-        "id": 3,
-        "menu": "Sandwich de jamón y queso",
-        "price": 1000
-    },
-    {
-        "id": 4,
-        "menu": "Jugo Natural",
-        "price": 700
-    }
+  {
+    "id": 1,
+    "menu": "Café americano",
+    "price": 500
+  },
+  {
+    "id": 2,
+    "menu": "Café con leche",
+    "price": 700
+  },
+  {
+    "id": 3,
+    "menu": "Sandwich de jamón y queso",
+    "price": 1000
+  },
+  {
+    "id": 4,
+    "menu": "Jugo Natural",
+    "price": 700
+  }
 ]
